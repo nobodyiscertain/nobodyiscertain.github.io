@@ -99,10 +99,5 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method       = :rsync
-  deploy.host         = '192.241.212.178'
-  deploy.path         = '/var/www/jamiewagner.me/public'
-  deploy.user         = 'deploy'
-  deploy.clean        = true
+  deploy.method = :git
 end

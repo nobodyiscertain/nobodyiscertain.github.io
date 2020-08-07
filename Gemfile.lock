@@ -155,6 +155,3 @@ DEPENDENCIES
   middleman-deploy
   middleman-livereload
   middleman-neat (= 0.0.4)
-
-BUNDLED WITH
-   1.17.3
