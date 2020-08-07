@@ -1,0 +1,53 @@
+<div class="hero">
+  <div class="hero__image-holder"></div>
+  <div class="hero__content">
+    <h1>Heeeellllllloooooo!</h1>
+    <p>Most folks call me Jamie, and I'm a <br><b>full-stack developer</b> located in Southern California.</p>
+  </div>
+</div>
+
+<div class="home__intro">
+  <div class="container narrow home__intro-content">
+    <h2 class="h1">About Me</h2>
+
+    <p>I've been professionally building things with computers since 2007. I'm
+      currently the Development Manager for the Build team at Kajabi. <%= link_to "We're Hiring!", "https://kajabi.com/careers#open-positions", target: "_blank" %></p>
+
+    <p>I also love to cook, hang with my family, travel, play music, listen to
+      records, and read. I'm an avid Big Brother fan and also keep a close eye
+      on the amount of days left before Thanksgiving 🦃 is here.</p>
+  </div>
+</div>
+
+<div class="home__dos">
+  <div class="container">
+    <h2 class="h1">Proud Work</h2>
+    <div class="flex-wrap">
+      <div class="home__do-box">
+        <figure>
+          <a href="https://www.dailyminded.com" target="_blank"><%= image_tag "dailyminded.svg", alt: "Daily Minded", width: "100%" %></a>
+        </figure>
+        <div class="do-box__about"><p>I am the technical <b>co-founder</b> of <a href="https://www.dailyminded.com" target="_blank">Daily Minded</a>: An online journal you might actually keep up with.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home__posts">
+  <div class="container align-left">
+    <h2 class="h1">From the Blog</h2>
+    <ul class="blog-posts__list set-height-wrap">
+      <% blog.articles.each do |article| %>
+        <li class="set-height">
+          <%= link_to article.title, article.url %>
+          <p><%= article.data.description %></p>
+        </li>
+      <% end %>
+      <li class="set-height"><%= link_to "Introducing Stag", "http://thisbythem.com/blog/introducing-stag-a-command-line-interface-for-statamic/" %>
+      <p>A command line interface for Statamic</p>
+      </li>
+      <li class="set-height"><%= link_to "Statamic: Relative HTML Cache Buster", "http://thisbythem.com/blog/statamic-realtive-cache-buster/" %></li>
+      <li class="set-height"><%= link_to "Pay. Your. Estimates.", "http://thisbythem.com/blog/pay-your-estimates/" %></li>
+    </ul>
+  </div>
+</div>

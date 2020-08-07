@@ -1,0 +1,17 @@
+@import footer
+@import header
+
+html, body
+  background: $tan
+
+.container
+  max-width: 68em
+  margin: 0 auto
+  padding: 0 $small-spacing
+  &.narrow
+    max-width: 48em
+  // &.align-left
+  //   +media($medium-screen-up)
+  //     margin: 0 0 0 10%
+  +media($medium-screen-up)
+    padding: 0 $big-spacing

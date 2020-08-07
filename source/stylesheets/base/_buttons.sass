@@ -1,0 +1,28 @@
+.btn,
+#{$all-button-inputs},
+button
+  transition: background .3s
+  +appearance(none)
+  -webkit-font-smoothing: antialiased
+  background-color: $blue
+  border-radius: 2px
+  border: none
+  color: $white
+  cursor: pointer
+  display: inline-block
+  font-size: $base-font-size
+  line-height: 1
+  padding: 1em 1.25em
+  text-decoration: none
+  //user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  text-transform: uppercase
+  font-weight: 700
+  &:hover,
+  &:focus
+    background-color: $action-color
+    color: #fff
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.5

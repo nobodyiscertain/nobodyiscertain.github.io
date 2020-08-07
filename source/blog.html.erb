@@ -1,0 +1,19 @@
+ <div class="container narrow">
+   <div class="blog__posts">
+     <h1>From the Blog</h1>
+     <hr />
+     <ul class="blog__post-list">
+       <% blog.articles.each do |article| %>
+         <li >
+           <%= link_to article.title, article.url %>
+           <p class="description"><%= article.data.description %></p>
+         </li>
+       <% end %>
+       <li ><%= link_to "Introducing Stag", "http://thisbythem.com/blog/introducing-stag-a-command-line-interface-for-statamic/" %>
+       <p class="description">A command line interface for Statamic</p>
+       </li>
+       <li ><%= link_to "Statamic: Relative HTML Cache Buster", "http://thisbythem.com/blog/statamic-realtive-cache-buster/" %></li>
+       <li ><%= link_to "Pay. Your. Estimates.", "http://thisbythem.com/blog/pay-your-estimates/" %></li>
+     </ul>
+   </div>
+ </div>

@@ -1,0 +1,31 @@
+.site-footer
+  padding: $big-spacing 0
+  background: $black
+  text-align: center
+  color: $dark-gray
+
+  h2
+    margin-bottom: $baseline
+    color: $medium-gray
+
+  .copyright
+    padding-top: $big-spacing
+    font-size: 0.8em
+    color: $medium-gray
+
+.social-connections
+  font-size: 0.8em
+  span
+    display: block
+    color: $medium-gray
+    margin-bottom: em(10)
+  a
+    transition: opacity .3s
+    display: inline-block
+    margin-right: $small-spacing
+    &:hover
+      opacity: .75
+    img
+      +size(auto 3em)
+      +media($medium-screen-up)
+        +size(auto 5em)

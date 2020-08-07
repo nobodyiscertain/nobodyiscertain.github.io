@@ -1,0 +1,53 @@
+.site-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: $blue
+  padding: $small-spacing
+
+  .logo-wrap
+    flex: 1 0 auto
+
+  .logo-wrap__logo
+    display: flex
+    align-items: center
+    img
+      +size(auto 3em)
+      margin-right: 1rem
+    h1
+      margin: 0 0 .25rem
+      line-height: 1
+      color: $white
+      font-weight: 300
+      display: none
+
+  nav
+    text-align: right
+    justify-content: flex-end
+    a
+      //font-size: .875em
+      font-weight: 600
+      text-transform: uppercase
+      color: $white
+      margin-right: .75rem
+
+  +media($medium-screen-down)
+    h1
+      font-size: 1.5rem
+
+  +media($medium-screen-up)
+    padding: $base-spacing
+    .logo-wrap__logo
+      img
+        +size(auto 4em)
+    nav a
+      margin-right: 1.5rem
+
+.index
+  .site-header
+    h1
+      display: none
+    +media($medium-screen-up)
+      +position(absolute, 0 0 auto 0)
+      z-index: 100
+      background: transparent

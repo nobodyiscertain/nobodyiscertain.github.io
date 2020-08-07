@@ -1,0 +1,19 @@
+<% wrap_layout :layout do %>
+<div class="container narrow">
+  <article class="blog-post">
+    <p class="type"><%= current_article.data.category %></p>
+    <h1><%= current_article.title %></h1>
+    <% if current_article.data.subtitle.present? %>
+      <p class="subtitle"><%= current_article.data.subtitle %></p>
+    <% end %>
+    <hr>
+    <%= yield %>
+    <p class="date"><%= current_article.date.strftime('%b %d %Y') %></p>
+  </article>
+</div>
+<div class="comments">
+  <div class="container narrow">
+    <%= partial "partials/comments" %>
+  </div>
+</div>
+<% end %>

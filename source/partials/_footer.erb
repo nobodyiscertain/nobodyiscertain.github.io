@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="container align-left">
+    <div class="social-connections">
+      <h2>Wanna be friends?</h2>
+      <a href="http://twitter.com/nobodyiscertain"><%= image_tag "twitter.svg", alt: "Twitter Logo" %></a>
+      <a href="https://github.com/nobodyiscertain"><%= image_tag "github.svg", alt: "GitHub logo" %></a>
+      <a href="http://instagram.com/nobodyiscertain/"><%= image_tag "instagram.svg", alt: "Instagram Logo" %></a>
+      <a href="mailto:hello@jamiewagner.me"><%= image_tag "icon-mail.svg", alt: "Email Icon" %></a>
+    </div>
+    <p class="copyright">
+      Copyright &copy; Jamie Wagner <%= Time.now.strftime('%Y') %>
+    </p>
+  </div>
+</footer>
+
+<script>
+  $(document).ready(function(){
+    // Select and loop the container element of the elements you want to equalise
+    $('.set-height-wrap').each(function(){
+      // Cache the highest
+      var highestBox = 0;
+      // Select and loop the elements you want to equalise
+      $('.set-height', this).each(function(){
+        // If this box is higher than the cached highest then store it
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height();
+        }
+      });
+      // Set the height of all those children to whichever was highest
+      $('.set-height',this).height(highestBox);
+    });
+  });
+</script>
+
+<% if environment == :build %>
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="https://cdn.usefathom.com/script.js" site="WVEYDDHL" defer></script>
+<!-- / Fathom -->
+<% end %>

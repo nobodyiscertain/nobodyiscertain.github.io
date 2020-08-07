@@ -1,0 +1,93 @@
+html
+  -webkit-font-smoothing: antialiased
+
+body
+  font-family: $base-font-family
+  color: $base-font-color
+
+h1, h2, h3, h4, h5, h6
+  font-family: $sans-serif
+
+html
+  font-size: 16px
+  line-height: 27px
+
+body
+  font-size: 1em
+  line-height: 1.6875em
+
+h1, .h1
+  font-size: 1.94444444em
+  line-height: 1.71428571em
+  margin-top: 0.85714286em / 2
+  margin-bottom: 1.71428572em / 2
+  +media($medium-screen-up)
+    margin-top: 0.85714286em
+    margin-bottom: 1.71428572em
+
+h2, .h2
+  font-size: 1.55555556em
+  line-height: 1.07142857em
+  margin-top: 1.07142857em
+  margin-bottom: 1.07142857em
+
+h3, .h3
+  font-size: 1.27777778em
+  line-height: 1.30434783em
+  margin-top: 1.30434783em
+  margin-bottom: 0
+
+h4, .h4
+  font-size: 1em
+  line-height: 1.66666667em
+  margin-top: 1.66666667em
+  margin-bottom: 0em
+
+h5, .h5
+  font-size: 1em
+  line-height: 1.66666667em
+  margin-top: 1.66666667em
+  margin-bottom: 0em
+
+p, ul, ol, pre, table, blockquote
+  margin-top: 0em
+  margin-bottom: 1.66666667em
+
+ul ul, ol ol, ul ol, ol ul
+  margin-top: 0em
+  margin-bottom: 0em
+
+a
+  color: $action-color
+  text-decoration: none
+  transition: color 0.1s linear
+  &:active,
+  &:focus,
+  &:hover
+    color: darken($action-color, 15%)
+  &:active,
+  &:focus
+    outline: none
+
+hr
+  border-bottom: $base-border
+  border-left: none
+  border-right: none
+  border-top: none
+  margin: $base-spacing 0
+
+img,
+picture
+  margin: 0
+  max-width: 100%
+  vertical-align: bottom
+
+code
+  background: #F7F7F7
+  border-radius: $base-border-radius * 1.5
+  border: 1px solid #E0E0E0
+  font-family: monaco
+  font-size: 0.75em
+  font-style: normal
+  padding: 0.1em 0.4em
+  white-space: nowrap

@@ -1,0 +1,76 @@
+.hire-me__intro,
+.hire-me__cta
+  padding: $base-spacing 0 $big-spacing
+  text-align: center
+  h1
+    margin-bottom: $baseline /2
+  p
+    margin: 0
+
+  +media($medium-screen-up)
+    font-size: 1.175em
+    line-height: $baseline
+
+.hire-me__cta
+  border-top: 1px solid $light-gray
+  margin-top: $baseline
+  padding-bottom: $huge-spacing
+  a
+    font-weight: 600
+
+
+.hire-me__group
+  p:last-of-type
+    margin-bottom: 0
+
+  +media($medium-screen-up)
+    display: flex
+    justify-content: space-between
+    padding: $baseline * 1.5 0
+    border-top: 1px solid $light-gray
+    font-size: 1.175em
+    line-height: $baseline
+
+    .hire-me__group-header
+      width: calc(100% - 33em)
+      h3
+        margin-top: 0
+    .hire-me__group-content
+      max-width: 32em
+
+.hire-me__example
+  &:not(:first-of-type)
+    margin-top: $baseline * 2
+  img
+    margin: 0 0 $baseline * 1
+    box-shadow: shade($tan, 15) 0 0 100px 0
+  a
+    @extend .btn
+    margin-top: $baseline
+    font-size: .775em
+  +media($medium-screen-down)
+    &:first-of-type
+      img
+        margin-top: $baseline
+
+.hire-me__testimony
+  +media($medium-screen-up)
+    &:last-of-type
+      .hire-me__testimony-giver
+        margin-bottom: 0
+
+.hire-me__testimony-giver
+  display: flex
+  align-items: center
+  margin: $baseline 0 $baseline * 1.5
+  img
+    +size(auto 4em)
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 1em
+  p
+    line-height: 1.3
+    span
+      display: block
+      font-size: .875em
+      color: $medium-gray
