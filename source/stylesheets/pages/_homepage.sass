@@ -40,6 +40,12 @@
     text-align: center
     a
       font-size: 1.275em
+
+  ul
+    @extend %default-ul
+    +media($medium-screen-up)
+      column-count: 2
+
   +media($medium-screen-up)
     padding: $big-spacing 0 $huge-spacing
     p
@@ -82,7 +88,6 @@
     figure
       height: 6em
       margin-bottom: $baseline * 2
-
 
 .home__posts
   padding: $big-spacing 0

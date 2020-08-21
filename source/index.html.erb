@@ -1,21 +1,30 @@
 <div class="hero">
   <div class="hero__image-holder"></div>
   <div class="hero__content">
-    <h1>Heeeellllllloooooo!</h1>
-    <p>Most folks call me Jamie, and I'm a <br><b>full-stack developer</b> located in Southern California.</p>
+    <h1>Howdy</h1>
+    <p>Most folks call me Jamie<br>and I love building things on the web.</p>
   </div>
 </div>
 
 <div class="home__intro">
   <div class="container narrow home__intro-content">
     <h2 class="h1">About Me</h2>
+    <p>I've been web'n it up since 2007. When I'm not cutting code:</p>
 
-    <p>I've been professionally building things with computers since 2007. I'm
-      currently the Development Manager for the Build team at Kajabi. <%= link_to "We're Hiring!", "https://kajabi.com/careers#open-positions", target: "_blank" %></p>
-
-    <p>I also love to cook, hang with my family, travel, play music, listen to
-      records, and read. I'm an avid Big Brother fan and also keep a close eye
-      on the amount of days left before Thanksgiving 🦃 is here.</p>
+    <ul>
+      <li>I'm a proud father and husband.</li>
+      <li>I think <%= link_to "travelling", "https://wagabonds.family/" %> is <%= link_to "pretty important", "https://www.instagram.com/thewagabonds/" %>.</li>
+      <li>I'm a rabid Big Brother fan.</li>
+      <li>I love to cook.</li>
+      <li>I try to be an <%= link_to "avid reader", "https://www.goodreads.com/nobodyiscertain" %>.</li>
+      <li>I'm a runner.</li>
+      <li>I'm a <%= link_to "music lover", "https://www.last.fm/user/nobodyiscertain" %> & <%= link_to "vinyl collector", "https://www.discogs.com/user/nobodyiscertain" %>.</li>
+      <li>Stand-up comedy is my favorite.</li>
+      <li>The Ice King is the most complex TV character.</li>
+      <li>I pretend to be a music maker.</li>
+      <li>Meditation keeps me sane.</li>
+      <li>I love Thanksgiving a little <i>too</i> much.🦃</li>
+    </ul>
   </div>
 </div>
 
@@ -25,11 +34,20 @@
     <div class="flex-wrap">
       <div class="home__do-box">
         <figure>
+          <a href="https://kajabi.com/" target="_blank">
+            <%= image_tag "kajabi-logo.svg", alt: "Kajabi", width: "100%", style: "max-width:225px"%>
+          </a>
+        </figure>
+        <div class="do-box__about"><p>I'm currently the Development Manager<br>for the Build team at Kajabi. <%= link_to "We're Hiring!", "https://kajabi.com/careers#open-positions", target: "_blank" %></p></div>
+      </div>
+
+      <div class="home__do-box">
+        <figure>
           <a href="https://www.dailyminded.com" target="_blank">
             <%= image_tag "dailyminded.svg", alt: "Daily Minded", width: "100%", style: "max-width:225px"%>
           </a>
         </figure>
-        <div class="do-box__about"><p>I am the technical <b>co-founder</b> of <a href="https://www.dailyminded.com" target="_blank">Daily Minded</a>: An online journal you might actually keep up with.</p></div>
+        <div class="do-box__about"><p>I am the technical <b>co-founder</b> of <a href="https://www.dailyminded.com" target="_blank">Daily Minded</a>:<br>An online journal you might actually keep up with.</p></div>
       </div>
     </div>
   </div>
